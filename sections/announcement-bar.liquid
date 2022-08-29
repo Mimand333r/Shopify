@@ -6,12 +6,40 @@
           {%- if block.settings.link != blank -%}
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
-              <p class='announcement-bar__message color-{{ block.settings.color_scheme_foreground }} h5' style="font-weight: bold;">
+              {% style %}
+                  .main_text{
+                    font-weight: bold;
+                    padding-bottom: 0px;
+                    padding-top: 5px;
+                    font-size: 25px;
+                    background-color: white;
+                    color: #3c4258;
+                  }
+                {% endstyle %}
+              <p class='announcement-bar__message color-{{ block.settings.color_scheme_foreground }} h5 main_text' style="font-weight: bold; padding-bottom:0px;">
                 {{ block.settings.text | escape }}
+                  {% style %}
+                    .ending_text{
+                      font-weight: bold;
+                      padding-bottom: 5px;
+                      padding-top: 0px;
+                      font-size: 19px;
+                      color: #e1330c;
+                    }
+                  {% endstyle %}      
+                  <div class='announcement-bar__message h5 ending_text'>
+                    <span>Endet in </span>
+                    <span id="timer" class='announcement-bar__message h5 ending_text' style="padding-left:0px;">
+                    4 Tagen, 23 Stunden
+                    </span>
+                  </div>
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
               </p>
+              <script>
+                 $( "#timer" ).text("24 Tagen, 12 Stunden");
+              </script>
           {%- if block.settings.link != blank -%}
             </a>
           {%- endif -%}
