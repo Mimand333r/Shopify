@@ -107,6 +107,12 @@
             <div >günstige </div>
             <span>Preis-Leistungs Computer</span>
           </h2>
+          <div style="
+              margin-top: 0px;
+              font-family: initial;
+              font-size: 23px;
+              font-weight: 700;
+          ">Günstiger wäre nur den Computer selbst zusammenzubauen</div>
           {%- when 'text' -%}
             {% comment %}
             vorher
@@ -120,6 +126,7 @@
               <div>Wir haben Computer Systeme mit vorselektierter Hardware für Sie zusammengestellt. Dabei legen wir den Schwerpunkt auf das Preis-Leistungs Verhältnis.</div>
             </div>
           {%- when 'buttons' -%}
+          {% comment %}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
                 <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
@@ -127,7 +134,7 @@
               {%- if block.settings.button_label_2 != blank -%}
                 <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
               {%- endif -%}
-
+          {% endcomment %}
             </div>
         {%- endcase -%}
       {%- endfor -%}
