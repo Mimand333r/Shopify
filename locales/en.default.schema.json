@@ -1104,7 +1104,7 @@
       "name": "Heinrich's Image banner",
       "settings": {
         "image": {
-          "label": "First image"
+          "label": "Test image"
         },
         "image_2": {
           "label": "Second image"
