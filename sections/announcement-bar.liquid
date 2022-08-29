@@ -8,7 +8,16 @@
           {%- endif -%}
               <p class='announcement-bar__message color-{{ block.settings.color_scheme_foreground }} h5' style="font-weight: bold; padding-bottom:0px;">
                 {{ block.settings.text | escape }}
-                <div class='announcement-bar__message h5' style="font-weight: bold; padding-top:0px;color: #f31313;">
+                  {% style %}
+                    .ending_text{
+                      font-weight: bold;
+                      padding-bottom: 5px;
+                      padding-top: 0px;
+                      font-size: 19px;
+                      color: #e1330c;
+                    }
+                  {% endstyle %}
+                <div class='announcement-bar__message h5 ending_text'>
                 Endet in 4 Tagen, 23 Stunden
                 </div>
                 {%- if block.settings.link != blank -%}
