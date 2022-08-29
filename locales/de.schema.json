@@ -978,6 +978,164 @@
         "name": "Bild-Banner"
       }
     },
+    "image-banner-heinrich": {
+      "name": "Heinrichs Bild-Banner",
+      "settings": {
+        "image": {
+          "label": "Erstes Bild"
+        },
+        "image_2": {
+          "label": "Zweites Bild"
+        },
+        "color_scheme": {
+          "info": "Sichtbar, wenn Container angezeigt wird."
+        },
+        "stack_images_on_mobile": {
+          "label": "Gestapelte Bilder auf Mobilgeräten"
+        },
+        "adapt_height_first_image": {
+          "label": "Abschnittshöhe an Größe des ersten Bildes anpassen",
+          "info": "Überschreibt bei Überprüfung die Einstellung für die Höhe des Bild-Banners."
+        },
+        "show_text_box": {
+          "label": "Container auf dem Desktop anzeigen"
+        },
+        "image_overlay_opacity": {
+          "label": "Deckkraft der Bildüberlagerung"
+        },
+        "header": {
+          "content": "Mobiles Layout"
+        },
+        "show_text_below": {
+          "label": "Container auf Mobilgerät anzeigen"
+        },
+        "image_height": {
+          "label": "Bannerhöhe",
+          "options__1": {
+            "label": "Klein"
+          },
+          "options__2": {
+            "label": "Mittel"
+          },
+          "options__3": {
+            "label": "Groß"
+          },
+          "info": "Verwende für Bilder ein Seitenverhältnis von 3:2 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Oben links"
+          },
+          "options__2": {
+            "label": "Oben zentriert"
+          },
+          "options__3": {
+            "label": "Oben rechts"
+          },
+          "options__4": {
+            "label": "Mitte links"
+          },
+          "options__5": {
+            "label": "Mitte zentriert"
+          },
+          "options__6": {
+            "label": "Mitte rechts"
+          },
+          "options__7": {
+            "label": "Unten links"
+          },
+          "options__8": {
+            "label": "Unten zentriert"
+          },
+          "options__9": {
+            "label": "Unten rechts"
+          },
+          "label": "Desktopinhaltsposition"
+        },
+        "desktop_content_alignment": {
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Zentriert"
+          },
+          "options__3": {
+            "label": "Rechts"
+          },
+          "label": "Desktopinhaltsausrichtung"
+        },
+        "mobile_content_alignment": {
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Zentriert"
+          },
+          "options__3": {
+            "label": "Rechts"
+          },
+          "label": "Mobile Inhaltsausrichtung"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Titel",
+          "settings": {
+            "heading": {
+              "label": "Überschrift"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Beschreibung"
+            },
+            "text_style": {
+              "options__1": {
+                "label": "Nachricht"
+              },
+              "options__2": {
+                "label": "Untertitel"
+              },
+              "options__3": {
+                "label": "Großbuchstaben"
+              },
+              "label": "Textstil"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Schaltflächen",
+          "settings": {
+            "button_label_1": {
+              "label": "Erste Beschriftung der Schaltfläche",
+              "info": "Lasse die Beschriftung leer, um die Schaltfläche auszublenden."
+            },
+            "button_link_1": {
+              "label": "Erster Link der Schaltfläche"
+            },
+            "button_style_secondary_1": {
+              "label": "Umriss-Stil für Schaltfläche verwenden"
+            },
+            "button_label_2": {
+              "label": "Zweite Beschriftung der Schaltfläche",
+              "info": "Lasse die Beschriftung leer, um die Schaltfläche auszublenden."
+            },
+            "button_link_2": {
+              "label": "Zweiter Link der Schaltfläche"
+            },
+            "button_style_secondary_2": {
+              "label": "Umriss-Stil für Schaltfläche verwenden"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Bild-Banner"
+      }
+    },
     "image-with-text": {
       "name": "Bild mit Text",
       "settings": {
