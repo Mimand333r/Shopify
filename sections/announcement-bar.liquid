@@ -12,7 +12,7 @@
                   }
                 {% endstyle %}
               <p class="announcement-bar__message h5">
-                {{ block.settings.color_scheme_foreground.red }}
+                {{ block.settings.color_scheme_foreground }}
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
