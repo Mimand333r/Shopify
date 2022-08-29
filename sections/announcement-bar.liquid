@@ -6,7 +6,7 @@
           {%- if block.settings.link != blank -%}
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
-              <p class='announcement-bar__message h5'>
+              <p class="announcement-bar__message h5">
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
@@ -63,14 +63,13 @@
           "default": "accent-1",
           "label": "t:sections.all.colors.label"
         },
-        {
+         {
           "type": "select",
           "id": "color_scheme_foreground",
           "options": [
             {
               "value": "text-1",
-              "label": "t:sections.all.text_colors.text.label",
-              "color": "t:sections.all.text_colors.text.label"
+              "label": "t:sections.all.text_colors.text.label"
             },
             {
               "value": "text-2",
