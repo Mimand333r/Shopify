@@ -118,7 +118,7 @@
         },
         "colors_text_2": {
           "label": "Text 2",
-          "info": "Alternative ForegroundColor"
+          "info": "Alternative foregroundcolor"
         },
         "colors_outline_button_labels": {
           "label": "Outline button",
