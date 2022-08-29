@@ -108,7 +108,7 @@
             "type": "announcement",
             "settings": {
               "text": "Neueröffnungsrabatt 25% auf alle PCs",
-              "color_scheme": "background-2",
+              "color_scheme": "inverse",
               "color_scheme_foreground": "text-2",
               "link": ""
             }
