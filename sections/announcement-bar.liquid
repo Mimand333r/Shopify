@@ -16,9 +16,6 @@
                     color: #3c4258;
                   }
                 {% endstyle %}
-              <script>
-              let t = meinText;
-              </script>
               <p class='announcement-bar__message color-{{ block.settings.color_scheme_foreground }} h5 main_text' style="font-weight: bold; padding-bottom:0px;">
                 {{ block.settings.text | escape }}
                   {% style %}
@@ -30,13 +27,16 @@
                       color: #e1330c;
                     }
                   {% endstyle %}                 
-                <div class='announcement-bar__message h5 ending_text'>
+                <div id="timer" class='announcement-bar__message h5 ending_text'>
                 Endet in 4 Tagen, 23 Stunden
                 </div>
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
               </p>
+              <script>
+                #timer.text("cool");
+              </script>
           {%- if block.settings.link != blank -%}
             </a>
           {%- endif -%}
