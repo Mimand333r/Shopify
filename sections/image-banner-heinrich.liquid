@@ -94,10 +94,10 @@
     }
   {% endstyle %}
     
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" style="display: flex;
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width" style="display: flex;
     justify-content: flex-start;
     align-items: center;">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient" >
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
