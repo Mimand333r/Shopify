@@ -8,9 +8,13 @@
           {%- endif -%}
               <p class='announcement-bar__message color-{{ block.settings.color_scheme_foreground }} h5' style="font-weight: bold;">
                 {{ block.settings.text | escape }}
+                
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
+              </p>
+              <p>
+                Endet in 4 Tagen, 23 Stunden
               </p>
           {%- if block.settings.link != blank -%}
             </a>
