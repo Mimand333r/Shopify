@@ -116,6 +116,10 @@
           "label": "Text",
           "info": "Used as foreground color on background colors."
         },
+        "colors_text_2": {
+          "label": "Text 2",
+          "info": "Alternative ForegroundColor"
+        },
         "colors_outline_button_labels": {
           "label": "Outline button",
           "info": "Also used for text links."
