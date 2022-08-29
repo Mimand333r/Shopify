@@ -43,6 +43,14 @@
   --color-foreground: var(--color-base-accent-2);
 }
 
+.color-text-1{
+  --color-foreground: var(--color-base-text);
+}
+
+.color-text-2{
+  --color-foreground: var(--color-base-text-2);
+}
+
 :root,
 .color-background-1 {
   --color-link: var(--color-base-outline-button-labels);
