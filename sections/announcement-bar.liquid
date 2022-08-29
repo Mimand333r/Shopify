@@ -7,11 +7,11 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
                 {% style %}
-                  .red_color{
-                    color:red;
+                  .fore_color{
+                    color:rgb({{ block.settings.color_scheme_foreground.red }} {{ block.settings.color_scheme_foreground.green }} {{ block.settings.color_scheme_foreground.blue }});
                   }
                 {% endstyle %}
-              <p class="announcement-bar__message red_color h5">
+              <p class="announcement-bar__message fore_color h5">
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
