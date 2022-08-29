@@ -26,13 +26,13 @@
                       font-size: 19px;
                       color: #e1330c;
                     }
-                  {% endstyle %}                 
-                <div class='announcement-bar__message h5 ending_text'>
-                Endet in 
-                <span id="timer" class='announcement-bar__message h5 ending_text' style="padding-left:0px;">
-                4 Tagen, 23 Stunden
-                </span>
-                </div>
+                  {% endstyle %}      
+                  <div class='announcement-bar__message h5 ending_text'>
+                    <span>Endet in </span>
+                    <span id="timer" class='announcement-bar__message h5 ending_text' style="padding-left:0px;">
+                    4 Tagen, 23 Stunden
+                    </span>
+                  </div>
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
