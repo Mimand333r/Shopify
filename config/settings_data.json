@@ -107,7 +107,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Neueröffnungsrabatt 25% auf alle PCs. Endet in 4 Tagen, 23 Stunden",
+              "text": "Neueröffnungsrabatt 25% auf alle PCs",
               "color_scheme": "background-2",
               "color_scheme_foreground": "text-2",
               "link": ""
