@@ -11,7 +11,7 @@
                     color:rgb({{ block.settings.color_scheme_foreground.red }} {{ block.settings.color_scheme_foreground.green }} {{ block.settings.color_scheme_foreground.blue }});
                   }
                 {% endstyle %}
-              <p class="announcement-bar__message color-text-2 h5">
+              <p class="announcement-bar__message color-{{ block.settings.color_scheme }} h5">
                 {{ block.settings.color_scheme_foreground }}
                 {{ block.settings.text | escape }}
                 {%- if block.settings.link != blank -%}
