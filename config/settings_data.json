@@ -109,7 +109,7 @@
             "settings": {
               "text": "Neueröffnungsrabatt 25% auf alle PCs. Endet in 4 Tagen, 23 Stunden",
               "color_scheme": "background-2",
-              "color_scheme_foreground": "text-1",
+              "color_scheme_foreground": "text-2",
               "link": ""
             }
           }
