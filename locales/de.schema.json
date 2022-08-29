@@ -362,6 +362,15 @@
                 "label": "Farbschema",
                 "has_cards_info": "Aktualisiere deine Theme-Einstellungen, um das Farbschema der Karte zu ändern."
             },
+            "text_colors": {
+                "text": {
+                    "label": "Text 1"
+                },
+                "text_2": {
+                    "label": "Text 2"
+                },
+                "label": "TextFarbschema"
+            },
             "heading_size": {
                 "label": "Größe der Überschrift",
                 "options__1": {
