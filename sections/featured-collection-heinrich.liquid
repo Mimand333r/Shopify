@@ -41,20 +41,20 @@
             <div style="display: block;overflow: hidden;position: relative;" aria-hidden="true">
                 <img
                   class="block w-full"
-                  src="{{ 'block.settings.transparent_main_backdrop' | asset_url }}"
+                  src="{{ transparent_main_backdrop | asset_url }}"
                   alt="transparent-background"
                   width="389"
                   height="900"
                 >
                  <!-- todo sourceset -->
                 <img
-                  srcset="{{ block.settings.transparent_main_backdrop | image_url }} {{ block.settings.transparent_main_backdrop.width }}w"
+                  srcset="{{ pc_1_background | image_url }} {{ pc_1_background.width }}w"
                   sizes="100vw"
-                  src="{{ block.settings.transparent_main_backdrop | image_url: width: 300 }}"
+                  src="{{ pc_1_background | image_url: width: 300 }}"
                   alt="gradient"
                   loading="lazy"
-                  width= {{ block.settings.transparent_main_backdrop.width }}
-                  height= {{ block.settings.transparent_main_backdrop.height }}
+                  width= {{ pc_1_background.width }}
+                  height= {{ pc_1_background.height }}
                 >
             </div>
             <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
