@@ -49,7 +49,7 @@
 }
 
 .center{
-  text-aöign:center;
+  text-align:center;
 }
 
 .top-m-7{
@@ -94,3 +94,14 @@
     min-height: 16.25rem;
 }
 
+.\!posabs{
+  position: absolute!important;
+}
+
+.top-0{
+  top:0;
+}
+
+.block{
+  display: block;
+}
