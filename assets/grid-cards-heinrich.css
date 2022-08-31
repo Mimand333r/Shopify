@@ -89,3 +89,7 @@
     width: 100%;
 }
 
+.min-h-260 {
+    min-height: 16.25rem;
+}
+
