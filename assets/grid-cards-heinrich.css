@@ -3,9 +3,24 @@
   grid-template-columns: repeat(12,minmax(0,1fr));
 }
 
-@media screen and (min-width: 100px) {
-  .xl-padding{
+@media screen and (min-width: 768px) {
+  .s-p6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .m-p10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-p20{
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
+
