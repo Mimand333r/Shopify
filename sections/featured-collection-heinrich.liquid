@@ -21,7 +21,7 @@
   }
 {%- endstyle -%}
 
-{% comment %}
+
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding>
       <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width">
@@ -32,7 +32,7 @@
           <div class="collection__description {{ section.settings.description_style }}">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
         {%- endif -%}
       </div>
-
+      {% comment %}
       <ul id="Slider-{{ section.id }}" class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item">
@@ -54,6 +54,7 @@
           {%- endfor -%}
         {%- endfor -%}
       </ul>
+      {% endcomment %}
         <div class="slider-buttons no-js-hidden">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
           <div class="slider-counter caption">
@@ -75,7 +76,7 @@
       </div>
   </div>
 </div>
-{% endcomment %}
+
 
 {% schema %}
 {
