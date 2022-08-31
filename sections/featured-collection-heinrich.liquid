@@ -48,13 +48,13 @@
                 >
                  <!-- todo sourceset -->
                 <img
-                  srcset="{{ pc_1_background | image_url }} {{ pc_1_background.width }}w"
+                  srcset="{{ 'pc_1_background' | image_url }} 300w"
                   sizes="100vw"
-                  src="{{ pc_1_background | image_url: width: 300 }}"
+                  src="{{ 'pc_1_background' | image_url: width: 300 }}"
                   alt="gradient"
                   loading="lazy"
-                  width= {{ pc_1_background.width }}
-                  height= {{ pc_1_background.height }}
+                  width= "300"
+                  height= "900"
                 >
             </div>
             <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
