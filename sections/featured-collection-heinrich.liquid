@@ -34,11 +34,14 @@
         {%- endif -%}
       </div>
       <div class="grid-container s-p6 m-p10 l-p20 mx-auto gap-2 m-gap-3 l-gap-5">
+        <div class="col-span-12">
         {%- if section.settings.title != blank -%}
-          <div class="col-span-12">
             <h2 class="title {{ section.settings.heading_size }} center">{{ section.settings.title | escape }}</h2>
-          </div>
         {%- endif -%}
+        {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
+          <div class="collection__description {{ section.settings.description_style }}">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
+        {%- endif -%}
+        </div>
         <div class="grid-item grid-item-1">Grid 1</div>
         <div class="grid-item grid-item-2">Grid 2</div>
         <div class="grid-item grid-item-3">Grid 3</div>
