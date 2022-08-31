@@ -56,9 +56,10 @@
   margin-top: 7rem;
 }
 
-@media (min-width: 768px)
-.m-col-span-4 {
-    grid-column: span 4/span 4;
+@media (min-width: 768px) {
+  .m-col-span-4 {
+      grid-column: span 4/span 4;
+  }
 }
 
 .rounded-md {
