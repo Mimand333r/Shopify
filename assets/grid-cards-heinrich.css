@@ -2,3 +2,7 @@
   display:grid;
   grid-template-columns: repeat(12,minmax(0,1fr));
 }
+
+@media (min-width: 1280px){
+  color:red;
+}
