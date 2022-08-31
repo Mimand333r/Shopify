@@ -46,20 +46,37 @@
                   width="389"
                   height="900"
                 >
-              <picture>
                  <!-- todo sourceset -->
                 <img
-                  src="{{ 'block.settings.pc_1_background' | asset_url }}"
+                  srcset="{{ block.settings.transparent_main_backdrop | image_url }} {{ block.settings.transparent_main_backdrop.width }}w"
+                  sizes="100vw"
+                  src="{{ block.settings.transparent_main_backdrop | image_url: width: 300 }}"
                   alt="gradient"
                   loading="lazy"
-                  width="300"
-                  height="900"
+                  width= {{ block.settings.transparent_main_backdrop.width }}
+                  height= {{ block.settings.transparent_main_backdrop.height }}
                 >
-              </picture>
             </div>
             <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
               
           {% comment %}
+            <img
+                  srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+                    {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                    {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                    {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                    {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                    {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                    {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                    {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+                    {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
+                  sizes="100vw"
+                  src="{{ section.settings.image | image_url: width: 1500 }}"
+                  loading="lazy"
+                  alt="{{ section.settings.image.alt | escape }}"
+                  width="{{ section.settings.image.width }}"
+                  height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
+                >
               <img
                 src="{{ block.settings.transparent_main_backdrop | asset_url }}"
                 alt="transparent-background"
