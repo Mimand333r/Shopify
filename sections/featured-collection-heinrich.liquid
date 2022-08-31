@@ -40,6 +40,14 @@
           <div class="w-full !posabs top-0">
             <div style="display: block;overflow: hidden;position: relative;" aria-hidden="true">
               <img
+                srcset="{%- if section.settings.transparent_main_backdrop.width >= 165 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if section.settings.transparent_main_backdrop.width >= 360 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if section.settings.transparent_main_backdrop.width >= 535 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 535 }} 535w,{%- endif -%}
+                {%- if section.settings.transparent_main_backdrop.width >= 750 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if section.settings.transparent_main_backdrop.width >= 1070 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 1070 }} 1070w,{%- endif -%}
+                {%- if section.settings.transparent_main_backdrop.width >= 1250 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 1250 }} 1250w,{%- endif -%}
+                {%- if section.settings.transparent_main_backdrop.width >= 1500 -%}{{ section.settings.transparent_main_backdrop | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {{ section.settings.transparent_main_backdrop | image_url }} {{ section.settings.transparent_main_backdrop.width }}w"
                 src="{{ block.settings.transparent_main_backdrop | image_url }}"
                 alt="transparent-background"
                 width="389"
