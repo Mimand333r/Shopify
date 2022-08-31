@@ -39,7 +39,7 @@
             <h2 class="title {{ section.settings.heading_size }} center">{{ section.settings.title | escape }}</h2>
         {%- endif -%}
         {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
-          <div class="collection__description {{ section.settings.description_style }}">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
+          <div class="collection__description {{ section.settings.description_style }} center">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
         {%- endif -%}
         </div>
         <div class="grid-item grid-item-1">Grid 1</div>
