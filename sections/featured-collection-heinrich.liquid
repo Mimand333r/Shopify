@@ -24,7 +24,7 @@
 
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient top-m-7">
-  <div class="collection section-{{ section.id }}-padding>
+  <div class="collection section-{{ section.id }}-padding">
       <div class="grid-container s-p6 m-p10 l-p20 mx-auto gap-2 m-gap-3 l-gap-5">
         <div class="col-span-12 collection__title title-wrapper title-wrapper--no-top-margin page-width">
         {%- if section.settings.title != blank -%}
@@ -34,7 +34,7 @@
           <div class="collection__description {{ section.settings.description_style }} center">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
         {%- endif -%}
         </div>
-        <div class="relative grid-item grid-item-1 col-span-12 m-col-span-4 flex w-full overflow-hidden  min-h-260 rounded-md flex-col" style="background-color:red;">Grid 1</div>
+        <div class="relative grid-item grid-item-1 col-span-12 m-col-span-4 flex w-full overflow-hidden min-h-260 rounded-md flex-col" style="background-color:red;">Grid 1</div>
         <div class="relative grid-item grid-item-1 col-span-12 m-col-span-4 flex w-full overflow-hidden min-h-260 rounded-md flex-col" style="background-color:red;">Grid 2</div>
         <div class="relative grid-item grid-item-1 col-span-12 m-col-span-4 flex w-full overflow-hidden min-h-260 rounded-md flex-col" style="background-color:red;">Grid 3</div>
       </div>
