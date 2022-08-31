@@ -43,3 +43,8 @@
     gap: 1.25rem;
   }
 }
+
+.col-span-12{
+  grid-column: span 12/span 12;
+}
+
