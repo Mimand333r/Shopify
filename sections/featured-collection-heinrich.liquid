@@ -39,16 +39,13 @@
           <!-- Background -->
           <div class="w-full !posabs top-0">
             <div style="display: block;overflow: hidden;position: relative;" aria-hidden="true">
-                {% comment %}
                 <img
-                  src="{{ block.settings.transparent_main_backdrop | asset_url }}"
+                  src="{{ 'block.settings.transparent_main_backdrop' | asset_url }}"
                   alt="transparent-background"
                   width="389"
                   height="900"
                   class="block w-full"
                 >
-               {% endcomment %}
-                <div>{{ block.settings.transparent_main_backdrop | asset_url }}</div>
             </div>
             <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
               
