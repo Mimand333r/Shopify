@@ -85,3 +85,7 @@
     position: relative;
 }
 
+.w-full {
+    width: 100%;
+}
+
