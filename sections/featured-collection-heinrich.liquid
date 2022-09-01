@@ -34,7 +34,7 @@
           <div class="collection__description {{ section.settings.description_style }} center">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
         {%- endif -%}
         </div>
-        {% for i in (1..3) %}
+        {%- for i in (1..3) -%}
           <div class="col-span-12 m-col-span-4 min-h-260">
               <img
                 src="{{ section.settings.pc_1_background | image_url }}"
@@ -43,6 +43,7 @@
                 style="object-fit: contain;"
               >
            </div>
+        {%- endfor -%}
         {% comment %}
         <div class="relative grid-item grid-item-1 col-span-12 m-col-span-4 flex w-full overflow-hidden min-h-260 rounded-md flex-col" style="background-color:red;">
           <!-- Background -->
@@ -123,7 +124,6 @@
           height="{{ block.settings.cover_image.height }}"
         >
         {% endcomment %}
-        {% endfor %}
       </div>
 
       {% comment %}
