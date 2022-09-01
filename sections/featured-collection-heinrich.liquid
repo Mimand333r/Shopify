@@ -41,14 +41,20 @@
             <div style="display: block;overflow: hidden;position: relative;" aria-hidden="true">
                 <img
                   class="block w-full"
-                  src="{{ transparent_main_backdrop | asset_url }}"
+                  src="{{ section.settings.transparent_main_backdrop | asset_url }}"
                   alt="transparent-background"
                   width="389"
                   height="900"
                 >
                  <!-- todo sourceset -->
-                <img
-                  srcset="{{ block.settings.pc_1_background | image_url }} {{ block.settings.pc_1_background.width }}w"
+
+            </div>
+            <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
+              
+          {% comment %}
+
+                            <img
+                  srcset="{{ section.settings.pc_1_background | image_url }} {{ block.settings.pc_1_background.width }}w"
                   sizes="100vw"
                   src="{{ block.settings.pc_1_background | image_url: width: 300 }}"
                   alt="gradient"
@@ -56,10 +62,7 @@
                   width= {{ block.settings.pc_1_background.width }}
                   height= {{ block.settings.pc_1_background.height }}
                 >
-            </div>
-            <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
-              
-          {% comment %}
+          
             <img
                   srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
                     {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
