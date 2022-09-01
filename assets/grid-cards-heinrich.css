@@ -108,18 +108,18 @@
 
 @media (min-width: 1024) {
   .s-max-width-1 {
-      max-width: '1024px';
+      max-width: 1024px;
   }
 }
 
 @media (min-width: 1280) {
   .m-max-width {
-      max-width: '1280px';
+      max-width: 1280px;
   }
 }
 
 @media (min-width: 1536) {
   .l-max-width {
-      max-width: "1536px";
+      max-width: 1536px;
   }
 }
