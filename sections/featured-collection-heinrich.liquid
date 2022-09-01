@@ -41,11 +41,18 @@
             <div style="display: block;overflow: hidden;position: relative;" aria-hidden="true">
                 <img
                   class="block w-full"
-                  src="{{ section.settings.transparent_main_backdrop | image_url }}"
+                  src="{{ section.settings.pc_1_background | image_url }}"
                   alt="transparent-background"
                   width="389"
                   height="900"
                 >
+            
+
+            </div>
+            <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
+              
+          {% comment %}
+
                  <!-- todo sourceset -->
                   <img
                   srcset="{{ section.settings.pc_1_background | image_url }} {{ section.settings.pc_1_background.width }}w"
@@ -56,13 +63,6 @@
                   width= {{ section.settings.pc_1_background.width }}
                   height= {{ section.settings.pc_1_background.height }}
                 >
-
-            </div>
-            <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
-              
-          {% comment %}
-
-
           
             <img
                   srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
