@@ -106,10 +106,6 @@
   display: block;
 }
 
-.test{
-  max-width:200px;
-}
-
 @media (min-width: 1024px) {
   .s-max-width-1 {
       max-width: 1024px;
