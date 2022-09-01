@@ -47,21 +47,22 @@
                   height="900"
                 >
                  <!-- todo sourceset -->
+                  <img
+                  srcset="{{ section.settings.pc_1_background | image_url }} {{ section.settings.pc_1_background.width }}w"
+                  sizes="100vw"
+                  src="{{ section.settings.pc_1_background | image_url: width: 300 }}"
+                  alt="gradient"
+                  loading="lazy"
+                  width= {{ section.settings.pc_1_background.width }}
+                  height= {{ section.settings.pc_1_background.height }}
+                >
 
             </div>
             <!-- {{ block.settings.transparent_main_backdrop | asset_url | img_tag: 'transparent-bg', 'block w-full' }} -->
               
           {% comment %}
 
-                            <img
-                  srcset="{{ section.settings.pc_1_background | image_url }} {{ block.settings.pc_1_background.width }}w"
-                  sizes="100vw"
-                  src="{{ block.settings.pc_1_background | image_url: width: 300 }}"
-                  alt="gradient"
-                  loading="lazy"
-                  width= {{ block.settings.pc_1_background.width }}
-                  height= {{ block.settings.pc_1_background.height }}
-                >
+
           
             <img
                   srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
