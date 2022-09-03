@@ -110,6 +110,9 @@
   .s-max-width-1 {
       max-width: 768px;
   }
+  .s-height {
+    height: 550px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -122,4 +125,18 @@
   .l-max-width {
       max-width: 1440px;
   }
+}
+
+
+.w3-4 {
+  width: calc((100% / 4) * 3);
+  --width: calc((100% / 4) * 3);
+}
+.w1-2 {
+  width: calc(100% / 2);
+  --width: calc(100% / 2);
+}
+.w1-4 {
+  width: calc(100% / 4);
+  --width: calc(100% / 4);
 }
