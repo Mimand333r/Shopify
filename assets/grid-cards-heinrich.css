@@ -111,7 +111,7 @@
       max-width: 768px;
   }
   .s-height {
-    height: 550px;
+    height: 293px;
   }
 }
 
@@ -119,24 +119,17 @@
   .m-max-width {
       max-width: 1024px;
   }
+  .m-height {
+    height: 391px;
+  }
 }
 
 @media (min-width: 1440px) {
   .l-max-width {
       max-width: 1440px;
   }
+  .l-height {
+    height: 550px;
+  }
 }
 
-
-.w3-4 {
-  width: calc((100% / 4) * 3);
-  --width: calc((100% / 4) * 3);
-}
-.w1-2 {
-  width: calc(100% / 2);
-  --width: calc(100% / 2);
-}
-.w1-4 {
-  width: calc(100% / 4);
-  --width: calc(100% / 4);
-}
