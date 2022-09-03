@@ -118,8 +118,8 @@
   }
 }
 
-@media (min-width: 1384px) {
+@media (min-width: 1440px) {
   .l-max-width {
-      max-width: 1384px;
+      max-width: 1440px;
   }
 }
